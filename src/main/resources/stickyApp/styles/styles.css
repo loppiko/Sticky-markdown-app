@@ -1,0 +1,129 @@
+/* @charset "UTF-8"; */
+.upperPanel {
+  -fx-background-color: #261F35;
+}
+.upperPanel .upperPanel-menuBar {
+  -fx-background-color: #261F35;
+  -fx-pref-height: 35px; /* Preferowana szerokość */
+  -fx-min-height: 35px; /* Minimalna szerokość */
+  -fx-max-height: 35px;
+}
+.upperPanel .upperPanel-menuBar .label {
+  -fx-background-color: transparent;
+  -fx-text-fill: #c2c2c2;
+}
+.upperPanel .upperPanel-menuBar .menu {
+  -fx-pref-height: 35px; /* Preferowana szerokość */
+  -fx-min-height: 35px; /* Minimalna szerokość */
+  -fx-max-height: 35px;
+}
+.upperPanel .upperPanel-menuBar .menu:hover, .upperPanel .upperPanel-menuBar .menu:showing {
+  -fx-background-color: rgba(192, 191, 191, 0.1882352941);
+}
+.upperPanel .upperPanel-menuBar .context-menu {
+  -fx-background-color: #3A314F;
+  -fx-background-insets: 1, 1, 2;
+}
+.upperPanel .upperPanel-menuBar .upperPanel-menuItem-Exit {
+  -fx-pref-height: 50px; /* Preferowana szerokość */
+  -fx-min-height: 50px; /* Minimalna szerokość */
+  -fx-max-height: 50px;
+  -fx-border-insets: 5px 0 0 0; /* przesunięcie ramki */
+  -fx-border-color: #474787;
+  -fx-border-width: 1px 0 0 0;
+  -fx-background-insets: 10px 0 10px 0; /* ustawia margines na dole jako część tła */
+}
+.upperPanel .upperPanel-menuBar .menu-item:hover, .upperPanel .upperPanel-menuBar .menu-item:focused {
+  -fx-background-color: rgba(192, 191, 191, 0.1882352941);
+  -fx-background-radius: 4px;
+}
+
+.editorArea {
+  -fx-background-color: #3A314F;
+}
+.editorArea .editorArea-textArea {
+  -fx-font-family: Consolas;
+  -fx-control-inner-background: #3A314F;
+  -fx-font-size: 22px;
+}
+
+.leftPanel {
+  -fx-background-color: #261F35;
+  -fx-pref-width: 250px; /* Preferowana szerokość */
+  -fx-min-width: 250px; /* Minimalna szerokość */
+  -fx-max-width: 250px; /* Maksymalna szerokość */
+  -fx-font-family: "Montserrat";
+  -fx-border-color: #474787;
+  -fx-border-width: 1px 0 0 0;
+}
+.leftPanel .leftPanel-upperPart {
+  -fx-spacing: 60px;
+}
+.leftPanel .leftPanel-upperPart .leftPanel-upperPart-title {
+  -fx-padding: 20px 0px;
+  -fx-text-fill: white;
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+}
+.leftPanel .leftPanel-upperPart .leftPanel-upperPart-hideButton {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+}
+.leftPanel .leftPanel-upperPart .leftPanel-upperPart-hideButton:hover {
+  -fx-background-color: rgba(192, 191, 191, 0.1882352941);
+}
+.leftPanel .leftPanel-notesScroll {
+  -fx-background-color: #261F35;
+  -fx-padding: 30px 30px 50px 30px;
+}
+.leftPanel .leftPanel-notesScroll .scroll-bar {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0em;
+  -fx-border-radius: 2em;
+}
+.leftPanel .leftPanel-notesScroll .thumb {
+  -fx-background-color: rgba(59, 36, 108, 0.9019607843);
+}
+.leftPanel .leftPanel-notesScroll .increment-arrow .decrement-arrow {
+  -fx-background-color: transparent;
+  -fx-background-radius: 0em;
+  -fx-padding: 0 10 0 0;
+  -fx-shape: " ";
+  -fx-padding: 0;
+}
+.leftPanel .leftPanel-notesScroll .leftPanel-notesScroll-NotesContainer {
+  -fx-background-color: #261F35;
+  -fx-spacing: 30px;
+  -fx-alignment: center;
+}
+.leftPanel .leftPanel-notesScroll .leftPanel-notesScroll-NotesContainer .leftPanel-noteBox {
+  -fx-padding: 10px;
+  -fx-background-color: #261F35;
+  -fx-border-radius: 10px;
+  -fx-border-color: #67568B;
+  -fx-border-width: 3px;
+  -fx-spacing: 5px;
+  -fx-pref-width: 176px; /* Preferowana szerokość */
+  -fx-min-width: 176px; /* Minimalna szerokość */
+  -fx-max-width: 176px; /* Maksymalna szerokość */
+  -fx-pref-height: 100px; /* Preferowana szerokość */
+  -fx-min-height: 100px; /* Minimalna szerokość */
+  -fx-max-height: 100px; /* Maksymalna szerokość */
+}
+.leftPanel .leftPanel-notesScroll .leftPanel-notesScroll-NotesContainer .leftPanel-noteBox .leftPanel-noteBox-title {
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+.leftPanel .leftPanel-notesScroll .leftPanel-notesScroll-NotesContainer .leftPanel-noteBox .leftPanel-noteBox-content {
+  -fx-text-fill: white;
+}
+.leftPanel .leftPanel-bottomPart {
+  -fx-padding: 0px 0px 15px 15px;
+}
+.leftPanel .leftPanel-bottomPart .leftPanel-bottomPart-settingsButton {
+  -fx-background-color: transparent;
+  -fx-background-radius: 5px;
+}
+.leftPanel .leftPanel-bottomPart .leftPanel-bottomPart-settingsButton:hover {
+  -fx-background-color: rgba(192, 191, 191, 0.1882352941);
+}/*# sourceMappingURL=styles.css.map */

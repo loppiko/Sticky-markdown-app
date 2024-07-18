@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" spacing="10" fx:controller="stickyApp.upperPanel.UpperPanel" styleClass="upperPanel">
+    <MenuBar styleClass="upperPanel-menuBar">
+        <Menu text="File" styleClass="upperPanel-fileMenu">
+            <MenuItem text="Save" styleClass="upperPanel-menuItem-Save"/>
+            <MenuItem text="Save As" styleClass="upperPanel-menuItem-SaveAs"/>
+            <MenuItem text="Open" styleClass="upperPanel-menuItem-Open"/>
+            <MenuItem text="Exit" styleClass="upperPanel-menuItem-Exit" onAction="#handleExitOnClick"/>
+        </Menu>
+        <Menu text="New" styleClass="upperPanel-newMenu"/>
+    </MenuBar>
+</HBox>

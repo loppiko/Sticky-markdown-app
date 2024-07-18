@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="stickyApp.leftPanel.LeftPanelController" styleClass="leftPanel">
+    <HBox styleClass="leftPanel-upperPart" alignment="CENTER">
+        <Label text="Notes" styleClass="leftPanel-upperPart-title"/>
+        <Region styleClass="leftPanel-upperPart-spacer">
+            <HBox.hgrow/>
+        </Region>
+        <Button styleClass="leftPanel-upperPart-hideButton">
+            <graphic>
+                <ImageView fitHeight="2" fitWidth="20" pickOnBounds="true" styleClass="leftPanel-upperPart-hideImage">
+                    <Image url="@../media/hide-icon.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+    <ScrollPane styleClass="leftPanel-notesScroll">
+        <VBox fx:id="notesContainer" styleClass="leftPanel-notesScroll-NotesContainer" />
+    </ScrollPane>
+    <HBox styleClass="leftPanel-bottomPart">
+        <Button styleClass="leftPanel-bottomPart-settingsButton">
+            <graphic>
+                <ImageView fitHeight="30" fitWidth="30" pickOnBounds="true" styleClass="leftPanel-bottomPart-settingsImage">
+                    <Image url="@../media/settings-icon.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+</VBox>
